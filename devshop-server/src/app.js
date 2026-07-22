@@ -24,6 +24,10 @@ app.get("/", (req, res) => {
     })
 })
 
+app.get("/api", (req, res) => {
+    res.send("API health OK")
+})
+
 app.use("/api/products", productRoutes)
 app.use("/api/auth", authRoutes)
 app.use("/api/payments", paymentRoutes)
