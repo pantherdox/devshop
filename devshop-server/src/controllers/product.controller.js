@@ -48,7 +48,7 @@ const getProducts = async (req, res, next) => {
         })
 
         
-    }catch{
+    }catch(error){
         next(error)
     }
 }
